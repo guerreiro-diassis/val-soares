@@ -1,0 +1,34 @@
+.questions {
+  padding-top: 70px;
+}
+
+.questions h2 {
+  font-size: 32px;
+}
+
+.questions h2,
+.questions h3 {
+  text-align: center;
+}
+
+.questions h3 {
+    margin-bottom: 20px;
+}
+
+.questions .questions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.questions-container .question {
+    font-weight: 700;
+}
+
+.questions li {
+    list-style: none;
+}
+
+.questions ul li::before {
+  content: "";
+}
