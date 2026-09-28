@@ -13,3 +13,31 @@ footer .social a {
   font-size: 24px;
   padding: 0 8px;
 }
+
+footer {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  footer {
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  footer h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  footer .social a {
+    font-size: 32px;
+    padding: 0 14px;
+    transition: color 0.3s;
+  }
+
+  footer .social a:hover {
+    color: var(--text-secondary-light-color);
+  }
+}
