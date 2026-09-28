@@ -21,3 +21,36 @@ ul li::before {
   color: #e3135e;
   font-weight: bold;
 }
+
+@media (min-width: 992px) {
+  .benefits h2 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .benefits ul {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);   /* 6 colunas: cada card ocupa 2 */
+    gap: 20px;
+  }
+
+  .benefits li {
+    grid-column: span 2;
+    margin-bottom: 0;
+    padding: 24px 24px 24px 52px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+  }
+
+  /* centraliza os dois cards da segunda linha */
+  .benefits li:nth-child(4) { grid-column: 2 / 4; }
+  .benefits li:nth-child(5) { grid-column: 4 / 6; }
+
+  .benefits li::before {
+    left: 24px;
+    top: 24px;
+  }
+}
