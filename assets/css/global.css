@@ -63,9 +63,18 @@ body {
   font-size: 20px;
   text-decoration: none;
   color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
   transition: 0.3s ease-in-out;
   background-color: var(--text-secondary-dark-color);
+}
+
+/* Container central: evita conteúdo esticado em telas grandes */
+header,
+main,
+footer {
+  max-width: 1100px;
+  margin-inline: auto;
 }
