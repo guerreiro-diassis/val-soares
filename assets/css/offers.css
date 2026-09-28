@@ -45,6 +45,24 @@
   font-size: 16px;
 }
 
+@media (min-width: 768px) {
+  .offers-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .card {
+    margin: 0;                 
+  }
+
+  .card.offer-1,
+  .card.offer-2 {
+    margin-top: 40px;
+  }
+}
+
 @media (min-width: 992px) {
   .offers h2 {
     font-size: 44px;
@@ -52,27 +70,18 @@
   }
 
   .offers-card {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     gap: 40px;
   }
 
   .card {
-    margin: 0;
     width: 380px;
     height: auto;
-    aspect-ratio: 312 / 288;   /* mantém a proporção da sua imagem */
+    aspect-ratio: 312 / 288;
     transition: transform 0.3s, box-shadow 0.3s;
   }
 
-  .card.offer-1,
-  .card.offer-2 {
-    margin-top: 40px;          
-  }
-
   .price {
-    margin-top: auto;          /* preço desce junto com o botão */
+    margin-top: auto;
   }
 
   .card .btn {
